@@ -472,10 +472,12 @@
         <div class="footer-subscribe">
           <p class="header-socialmedia">Subscribe</p>
           <form class="subscribe-form">
+            <label for="subscribe-email"></label>
             <input
               type="email"
               name="subscribe-email"
               class="subscribe-input"
+              id="subscribe-email"
               placeholder="E-mail"
             />
             <button type="submit" class="subscribe-btn">
@@ -484,15 +486,14 @@
                 <use href="./images/icons.svg#icon-Frame"></use>
               </svg>
             </button>
-            </div>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-open-btn">
-          <svg class="modal-open-btn-icon" height="24" font-weight="24">
+          <svg class="modal-open-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
@@ -550,13 +551,21 @@
             ></textarea>
           </div>
           <div class="checkbox-wrap">
-            <input id="policy" type="checkbox" name="policy" class="request-check visually-hidden">
-            <label for="policy" class="checkbox-label"><span class="custom-checkbox">
-              <svg width="10" height="8">
-              <use href="./images/icons.svg#icon-Check"></use>
-            </svg></span>
-            I accept the terms and conditions of the <a class="policy-link">Privacy Policy</a>
-          </label>
+            <input
+              id="policy"
+              type="checkbox"
+              name="policy"
+              class="request-check visually-hidden"
+            />
+            <label for="policy" class="checkbox-label"
+              ><span class="custom-checkbox">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-Check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="policy-link">Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
